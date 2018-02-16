@@ -1,88 +1,166 @@
 * {
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #CBA135;
 }
 
-body {
-    
-    background-size: cover;
-    line-height: 1.5;
-}
-p{
-    text-align:center;
-}
-
-.navbar {
-    background: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0.2);
-    text-align: center;
-    margin-bottom:-10px;
-}
-.display-4{
-    font-family: 'Rammetto One', cursive;
-    font-family: 'Lobster', cursive;
-    text-align:center;
-}
-#home {
+/*WELCOME PAGE*/
+#brand {
+    margin-bottom: -1px;
+    text-shadow: 0 0 3px #000, 0 0 5px #FFF;
+    margin-top: -70px;
     background: url(http://static.tumblr.com/7b37633d29d9aaca9828b5132273cdf1/sy59fz4/1linmyvvt/tumblr_static_4y2skv97m24ogs84wc40sccso.jpg);
-    height: 650px;
-    margin-bottom:-50px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align:center;
-}
-
-#homeBrand {
-    height: 500px;
-    margin-top: 40px;
-    background: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0.2);
-}
-
-#today {
-    background-color: black;
-    min-height: 650px;
-    margin-bottom:-50px;
+    min-height: 658px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#todayBrand {
-    height: 500px;
-    margin-top: 40px;
-    background-color: white;
+#logo {
+    height: 450px;
+    margin-top: 60px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #CBA135;
+    border-bottom: none;
+    border-radius: 10px;
 }
 
-#upcoming {
-    background: url(https://static.tumblr.com/106bc3193f8a144520727778b74cde06/dr5oxct/4Apnuivar/tumblr_static_tumblr_static_2171n0cjqjogggggoco0g8cgw_640.png);
-    min-height: 650px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+#icon {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.display-3 {
+    margin-top: 100px;
+}
+
+ /*STICKY NAVBAR FOR THE TOGGLER BUTTON*/
+#navBar {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 6px -6px #CBA135;
+}
+/*TOGGLE BUTTON*/
+.toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CBA135;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*TOGGLE-ABLE SEARCHBAR*/
+.overlay {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: hidden;
+    display: none;
+    box-shadow: 0px 0px 10px #CBA135;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+#submit-input, #select-artist {
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#eventResults {
+    min-height: 658px;
+    background: linear-gradient(-45deg, #000, #CCC, #FFF, #CCC, #000);
+}
+
+.card-body {
+    margin: center;
+}
+
+.event-div:hover {
+    text-align: center;
+    position:relative;
+    width:100%;
+    height:auto;
+    display:block;
+    z-index:999;
+    border: solid 2px #CBA135;
+    background: black;
+}
+
+
+#artist-div {
+    background: none;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.card-body {
+    margin: center;
+}
+.event-div:hover {
+    text-align: center;
+    position:relative;
+    width:100%;
+    height:auto;
+    display:block;
+    z-index:999;
+    border: solid 2px #CBA135;
+    background: black;
+
+
+}
+
+#artist-div{
+   margin: auto;
+}
+
+#artistResults {
+    border: solid 3px #CBA135;
+}
+#eventResults {
+    height: 70px;
     background-size: cover;
+    opacity: .9;
+    background: url(https://static.tumblr.com/7b37633d29d9aaca9828b5132273cdf1/sy59fz4/1linmyvvt/tumblr_static_4y2skv97m24ogs84wc40sccso.jpg);
 }
 
-#upcomingBrand {
-    height: 500px;
-    margin-top: 40px;
-    background: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0.2);
+#artist-div{
+    margin: auto;
 }
 
-#search {
-    /*background-color: white;*/
-    min-height: 650px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#searchBrand {
-    height: 500px;
-    margin-top: 40px;
-    background-color: black;
-}
